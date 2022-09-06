@@ -21,8 +21,8 @@ const DisplayMap = ({ data }) => {
           position={position}
           icon={
             new Icon({
-              iconUrl: "/map-icon.png",
-              iconSize: [60, 50],
+              iconUrl: "/icon-location.svg",
+              iconSize: [40, 50],
               iconAnchor: [12, 41],
             })
           }

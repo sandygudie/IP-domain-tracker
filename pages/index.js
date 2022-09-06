@@ -51,7 +51,7 @@ function HomePage() {
       <Head>
         <title>IP Tracker</title>
         <meta name="description" content="IP Tracker" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon-32x32.png" />
       </Head>
 
       <Header

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 function Header({ data, getDataHandler, search, setSearchValue }) {
   const handleChange = (event) => {
@@ -23,8 +24,12 @@ function Header({ data, getDataHandler, search, setSearchValue }) {
           type="submit"
           id="searchbtn"
         >
-          {" "}
-          &gt;
+         <Image
+      src="/images/icon-arrow.svg"
+      alt="Picture of the author"
+      width={10}
+      height={10} 
+      />
         </button>
       </div>
 
