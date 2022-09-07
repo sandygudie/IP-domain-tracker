@@ -1,5 +1,5 @@
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
 
 function Header({ data, getDataHandler, search, setSearchValue }) {
   const handleChange = (event) => {
@@ -12,11 +12,11 @@ function Header({ data, getDataHandler, search, setSearchValue }) {
       <p className="title">IP Address Tracker</p>
       <div className="search_form">
         <input
-          onChange={(e)=>handleChange(e)}
+          onChange={(e) => handleChange(e)}
           id="searchvalue"
           type="search"
           name="searchval"
-          value= {search}
+          value={search}
           placeholder="Search for any IP address and domain"
         />
         <button
@@ -24,12 +24,12 @@ function Header({ data, getDataHandler, search, setSearchValue }) {
           type="submit"
           id="searchbtn"
         >
-         <Image
-      src="/images/icon-arrow.svg"
-      alt="Picture of the author"
-      width={10}
-      height={10} 
-      />
+          <Image
+            src="/images/icon-arrow.svg"
+            alt="Picture of the author"
+            width={10}
+            height={10}
+          />
         </button>
       </div>
 
@@ -38,17 +38,17 @@ function Header({ data, getDataHandler, search, setSearchValue }) {
           <p>IP Address</p>
           <span>{data?.ip}</span>
         </div>
-<hr/>
+        <hr />
         <div>
           <p>Location</p>
           <span>{data?.location?.city}</span>
         </div>
-        <hr/>
+        <hr />
         <div>
           <p>TIMEZONE</p>
           <span>{data.location?.timezone}</span>
         </div>
-        <hr/>
+        <hr />
         <div>
           <p>ISP</p>
           <span>{data?.isp}</span>
