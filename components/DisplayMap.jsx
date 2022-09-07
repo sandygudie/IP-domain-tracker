@@ -28,7 +28,7 @@ const DisplayMap = ({ data }) => {
           }
         >
           <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
+           { data.isp}
           </Popup>
         </Marker>
       </MapContainer>
